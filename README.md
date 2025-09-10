@@ -1,5 +1,4 @@
-Perfect 👍
-Here’s a **full guide from scratch** for deploying a **WireGuard VPN server on AWS EC2 Ubuntu**, including scripts to add customers and cameras, with isolation and automation.
+**full guide from scratch** for deploying a **WireGuard VPN server on AWS EC2 Ubuntu**, including scripts to add customers and cameras, with isolation and automation.
 
 ---
 
@@ -297,7 +296,3 @@ ping 10.0.2.2   # Camera
 * Secure firewall setup with **UFW + AWS SG**.
 
 ---
-
-👉 This is now a **complete production-ready framework** for managing WireGuard customers with NVRs + cameras.
-
-Would you like me to also include a **backup/restore script** so you can migrate this setup between EC2 servers if needed?

@@ -52,7 +52,13 @@ Generate server keys:
 wg genkey | tee server_private.key | wg pubkey > server_public.key
 ```
 
-Create server config `/etc/wireguard/wg0.conf`:
+Create a directory for scripts + configs:
+
+```bash
+mkdir -p /wireguard/
+```
+
+Create server config `vi /wireguard/wg0.conf`:
 
 ```ini
 [Interface]
@@ -76,8 +82,8 @@ sudo systemctl start wg-quick@wg0
 Create a directory for scripts + configs:
 
 ```bash
-sudo mkdir -p /etc/wireguard/customers
-cd /etc/wireguard
+mkdir -p /wireguard/customers
+cd /wireguard
 ```
 
 ---

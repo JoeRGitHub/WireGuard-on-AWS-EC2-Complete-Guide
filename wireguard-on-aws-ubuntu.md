@@ -55,7 +55,7 @@ wg genkey | tee server_private.key | wg pubkey > server_public.key
 Create a directory for scripts + configs:
 
 ```bash
-mkdir -p /wireguard/
+mkdir -p wireguard
 ```
 
 Create server config `vi /wireguard/wg0.conf`:
@@ -82,8 +82,8 @@ sudo systemctl start wg-quick@wg0
 Create a directory for scripts + configs:
 
 ```bash
-mkdir -p /wireguard/customers
-cd /wireguard
+mkdir -p wireguard/customers
+cd wireguard
 ```
 
 ---

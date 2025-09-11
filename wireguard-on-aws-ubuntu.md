@@ -52,6 +52,7 @@ Generate server keys:
 wg genkey | tee server_private.key | wg pubkey > server_public.key
 ```
 
+<<<<<<< HEAD
 Create a directory for scripts + configs:
 
 ```bash
@@ -59,6 +60,9 @@ mkdir -p wireguard
 ```
 
 Create server config `vi /wireguard/wg0.conf`:
+=======
+Create server config `/etc/wireguard/wg0.conf`:
+>>>>>>> parent of 1d64349 (Update wireguard-on-aws-ubuntu.md)
 
 ```ini
 [Interface]
@@ -82,8 +86,13 @@ sudo systemctl start wg-quick@wg0
 Create a directory for scripts + configs:
 
 ```bash
+<<<<<<< HEAD
 mkdir -p wireguard/customers
 cd wireguard
+=======
+sudo mkdir -p /etc/wireguard/customers
+cd /etc/wireguard
+>>>>>>> parent of 1d64349 (Update wireguard-on-aws-ubuntu.md)
 ```
 
 ---
